@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 24px;
+    --delay-hole-01: 1s;
+    --delay-hole-06: 1.5s;
+    --delay-hole-09: 2.1s;
+    --delay-hole-12: 300ms;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 75rem;
+    background: url('./assets/fundo.svg') no-repeat center top;
+    background-size: contain;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.line_01 {
+    width: 100vh;
+}
+
+.line_02 {
+    width: 100vh;
+
+    margin: 18vh 0;
+}
+
+.line_03 {
+    width: 100vh;
+}
+
+.hole {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    display: none;
+    width: 20vh;
+}
+
+.toupeira06 {
+    display: block;
+}
+
+
+/* ###################################################### */
+
+#hole_01 .toupeira06 {
+    z-index: 0;
+}
+
+#hole_01 .toupeira05 {
+    display: block;
+    animation: show_mole_05 linear 3.2s 5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_01 .toupeira04 {
+    display: block;
+    animation: show_mole_04 linear 3.2s 5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_01 .toupeira03 {
+    display: block;
+    animation: show_mole_03 linear 3.2s 5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_01 .toupeira02 {
+    display: block;
+    animation: show_mole_02 linear 3.2s 5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_01 .toupeira01 {
+    display: block;
+    animation: show_mole_01 linear 3.2s 5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* ###################################################### */
+
+#hole_06 .toupeira06 {
+    z-index: 0;
+}
+
+#hole_06 .toupeira05 {
+    display: block;
+    animation: show_mole_05 linear 1.1s 1s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_06 .toupeira04 {
+    display: block;
+    animation: show_mole_04 linear 1.1s 1s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_06 .toupeira03 {
+    display: block;
+    animation: show_mole_03 linear 1.1s 1s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_06 .toupeira02 {
+    display: block;
+    animation: show_mole_02 linear 1.1s 1s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_06 .toupeira01 {
+    display: block;
+    animation: show_mole_01 linear 1.1s 1s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* ###################################################### */
+
+#hole_09 .toupeira06 {
+    z-index: 0;
+}
+
+#hole_09 .toupeira05 {
+    display: block;
+    animation: show_mole_05 linear 1.3s 0.5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_09 .toupeira04 {
+    display: block;
+    animation: show_mole_04 linear 1.3s 0.5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_09 .toupeira03 {
+    display: block;
+    animation: show_mole_03 linear 1.3s 0.5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_09 .toupeira02 {
+    display: block;
+    animation: show_mole_02 linear 1.3s 0.5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_09 .toupeira01 {
+    display: block;
+    animation: show_mole_01 linear 1.3s 0.5s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* ###################################################### */
+
+#hole_12 .toupeira06 {
+    z-index: 0;
+}
+
+#hole_12 .toupeira05 {
+    display: block;
+    animation: show_mole_05 linear 2.5s 2s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_12 .toupeira04 {
+    display: block;
+    animation: show_mole_04 linear 2.5s 2s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_12 .toupeira03 {
+    display: block;
+    animation: show_mole_03 linear 2.5s 2s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_12 .toupeira02 {
+    display: block;
+    animation: show_mole_02 linear 2.5s 2s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#hole_12 .toupeira01 {
+    display: block;
+    animation: show_mole_01 linear 2.5s 2s infinite;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 1;
+}
+
+@media (width < 140vh) {
+    main {
+        width: 100vw;
+
+        background-position: center;
+        margin: auto;
+    }
+
+    .lines {
+        width: 80vw;
+    }
+
+    img {
+        width: 15vw;
+    }
+}
+
+@keyframes show_mole_05 {
+    0% {
+        opacity: 1;
+        transition-duration: 0s;
+    }
+    12% {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show_mole_04 {
+    0% {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    10% {
+        opacity: 1;
+        transition-duration: 0s;
+    }
+    22% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show_mole_03 {
+    0% {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transition-duration: 0s;
+    }
+    32% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show_mole_02 {
+    0% {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transition-duration: 0s;
+    }
+    42% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show_mole_01 {
+    0% {
+        opacity: 0;
+        transition-duration: 0s;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        transition-duration: 0s;
+    }
+    52% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

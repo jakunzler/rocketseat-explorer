@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalie sua Mentoria</title>
+
+  <link rel="stylesheet" href="avalie-mentoria.css">
+
+  <link rel="shortcut icon" href="images/good-feedback.png" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Avalie a sua Mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="images/bubble.svg" alt="Balão contendo estrelas para medir nível de satisfação">
+    </header>
+    
+    <div class="go-home">
+      <a href="/explorer_stage03_formulario_mentoria/index.html">
+        <img 
+        src="images/home.png" 
+        alt="Home icon from Flaticon created by smashingstocks"
+        title="Home icon from Flaticon created by smashingstocks">
+      </a>
+    </div>
+
+    <form id="form-header">
+
+      <fieldset>
+          
+        <div class="fieldset-wrapper">
+          <legend>Informações Pessoais</legend>
+        </div>
+      </fieldset>
+    </form>
+
+    <form id="my-form">
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+<!-- 
+          <legend>Informações Pessoais</legend> -->
+
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="given-name">Nome</label>
+              <input 
+                type="text" 
+                id="given-name"
+                required/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="family-name">Sobrenome</label>
+              <input 
+                type="text" 
+                id="family-name"
+                required/>
+            </div>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="event-email" />
+          </div>
+
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do Mentor</legend>
+
+          <div class="input-wrapper">
+            <label for="mentor-name">Selecione quem foi o seu mentor</label>
+            <select name="menotr-name" id="mentor-name" style="width: 300px;">
+              <option value="Mentor">Selecione o mentor</option>
+              <option value="Jesus">Jesus</option>
+              <option value="Maria">Maria</option>
+              <option value="José">José</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="mentor-feedback">Feedback sobre o mentor</label>
+            <textarea name="mentor-feedback" id="mentor-feedback" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="check-fulfillment" id="check-fulfillment">
+            <label for="check-fulfillment">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Agendando próxima mentoria</legend>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="event-date" />
+              </div>
+    
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end" />
+              </div>
+            </div>
+
+        </div>
+      </fieldset>
+
+
+    </form>
+    <footer>
+      <button 
+        class="button" 
+        form="my-form">
+        Salvar
+      </button>
+    </footer>
+
+    <div class="source">
+
+      <p>
+        Home icon created by smashingstocks ->
+      </p>
+      <a 
+      href="https://www.flaticon.com/br/icones-gratis/botao-home" 
+      title="Home icon"
+      target="_blank"
+      >Flaticon
+      </a>
+
+      <br>
+
+      <p>
+        Good-feedback icons created by juicy_fish ->
+      </p>
+      <a 
+      href="https://www.flaticon.com/free-icons/good" 
+      title="Good-feedback icon"
+      target="_blank"
+      >Flaticon
+      </a>
+
+    </div>
+  
+  </div>
+</body>
+</html>

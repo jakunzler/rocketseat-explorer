@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorer Stage 04 - Exercício 01</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/tarefas-diarias.png" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <script src="./script.js"></script>
+
+    <header>
+        <h1>Exercício de fixação</h1>
+        <img src="images/lista-de-tarefas.png" alt="Lista com tarefas a fazer">
+    </header>
+
+    <main>
+        <div class="show">
+            <p>
+                Prezado <span id="userName"></span>,
+
+                <br>
+
+                os números informados foram <span id="showNumber01"></span> e <span id="showNumber02"></span>.
+
+                <br>
+
+                A soma deles é <span id="numberEvenOdd"></span>.
+
+                <br>
+
+                <span id="isEqual"></span>
+                
+                <script>
+                    document.getElementById("showNumber01").innerHTML = number01
+                    document.getElementById("showNumber02").innerHTML = number02
+                    document.getElementById("numberEvenOdd").innerHTML = numberEvenOdd
+                    document.getElementById("isEqual").innerHTML = isEqual
+                    document.getElementById("userName").innerHTML = userName
+                </script>
+
+
+            </p>
+        </div>
+
+        <div class="sum">
+            <p>
+                O resultado da soma dos números é <span id="sum"></span>
+                <script>
+                    document.getElementById("sum").innerHTML = sumResult(number01, number02);
+                </script>
+            </p>
+        </div>
+
+        <div class="subtraction">
+            <p>
+                O resultado da subtração dos números é  <span id="sub"></span>
+                <script>
+                    document.getElementById("sub").innerHTML = subResult(number01, number02);
+                </script>
+            </p>
+
+        </div>
+
+        <div class="multiplication">
+            <p>
+                O resultado da multiplicação dos números é  <span id="mult"></span>
+                <script>
+                    document.getElementById("mult").innerHTML = multResult(number01, number02);
+                </script>
+            </p>
+
+        </div>
+
+        <div class="division">
+            <p>
+                O resultado da divisão dos números é  <span id="divi"></span>
+                <script>
+                    document.getElementById("divi").innerHTML = divResult(number01, number02);
+                </script>
+            </p>
+
+        </div>
+
+        <div class="remainder">
+            <p>
+                O resto da divisão entre esses números é  <span id="remain"></span>
+                <script>
+                    document.getElementById("remain").innerHTML = restResult(number01, number02);
+                </script>
+            </p>
+
+        </div>
+
+
+
+
+    </main>
+
+    <div class="source">
+
+        <p>
+          Task icon created by Eucalyp ->
+        </p>
+        <a 
+        href="https://www.flaticon.com/br/icones-gratis/tarefa" 
+        title="Home icon"
+        target="_blank"
+        >Flaticon
+        </a>
+  
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="black-rectangle"></div>
+
+        <div class="texto">
+            <h1>Crie e compartilhe <br> seu evento.</h1>
+
+            <p>
+                O primeiro passo, é preencher esse <br> formulário de inscrição.
+            </p>
+
+        </div>
+
+        <div class="form">
+
+            <form method="post" action="https://formsubmit.co/jakunzler.embrasca@gmail.com" id="event-form">
+
+                <div class="information">
+
+                    <h2>Informações do Evento</h2>
+
+                    <div class="line"></div>
+
+                    <p>Título do evento<span>&nbsp;&nbsp;&nbsp;(mínimo 8 caracteres)</span></p>
+
+                    <label for="event-title"></label>
+                    <input class="input-line" type="text" id="event-title" name="event-title" minlength="8" required>
+
+                    <p>Link do evento<span>&nbsp;&nbsp;&nbsp;(comece com https://)</span></p>
+
+                    <label for="event-link"></label>
+                    <input class="input-line" type="url" id="event-link" name="event-link" required>
+
+                    <p>Whatsapp para contato<span>&nbsp;&nbsp;&nbsp;(somente números)</span></p>
+
+                    <label for="whats-contact"></label>
+                    <input class="input-line" type="number" id="whats-contact" name="whats-contact" minlength="9" required>
+
+                    <p>Informações extras</p>
+
+                    <label for="extra-info"></label>
+                    <textarea name="extra-info" id="extra-info" cols="30" rows="10"></textarea>
+
+                    <p>Categoria</p>
+
+                    <label for="category"></label>
+                    <select name="category" id="category" required>
+                    <option>Tipo do evento</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Científico">Científico</option>
+                    <option value="Literário">Literário</option>
+                    <option value="Militar">Militar</option>
+                    </select>
+
+                </div>
+
+                <div class="privacy">
+                    
+                    <h2>Privacidade</h2>
+
+                    <div class="line"></div>
+
+                    <p>E-mail do administrador<span>&nbsp;&nbsp;&nbsp;(digite um e-mail valido)</span></p>
+
+                    <label for="e-mail"></label>
+                    <input class="input-line" type="email" id="e-mail" name="e-mail" required>
+
+                    <p>Senha de acesso para os participantes<span>&nbsp;&nbsp;&nbsp;(mínimo 8 caracteres)</span></p>
+
+                    <label for="user-password"></label>
+                    <input class="input-line" type="password" id="user-password" name="user-password" minlength="8" required>
+
+                    <div class="check-private">
+                        <input class="check-private-box" type="checkbox" name="private" id="private" checked>
+                        <label for="private">Evento privado</label>
+                    </div>
+
+                </div>
+
+                <div class="day-hour">
+                    
+                    <h2>Dia e hora</h2>
+
+                    <div class="line"></div>
+
+                    <div class="info">
+
+                        <div class="date">
+                            <p>Data</p>
+
+                            <label for="date"></label>
+                            <input class="date-line" type="date" id="date" name="date" minlength="8" required>
+                        </div>
+                        
+                        <div class="from">
+                            <p>Das</p>
+
+                            <label for="date"></label>
+                            <input class="duration-line" type="time" id="from" name="date" minlength="8" required>
+                        </div>
+
+                        <div class="until">
+                            <p>Até</p>
+
+                            <label for="date"></label>
+                            <input class="duration-line" type="time" id="until" name="date" minlength="8" required>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+        
+    </header>
+
+    <footer>
+
+        <label for="save-event"></label>
+        <input type="submit" form="event-form" id="save-event" name="save-event" value="Salvar evento">
+
+    </footer>
+
+    <script>
+        let fm = document.forms[0];
+        console.log(fm)
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    animation: gradient 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+body, button, input {
+    font-family: "DM Sans", sans-serif;
+}
+
+button {
+    background: #FF9500;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+button:hover {
+    background-color: #b85a20;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.8);
+
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+
+    margin-top: -12rem;
+
+    text-align: center;
+}
+
+/* screen1 */
+h1 {
+    color: #34355B;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    color: #34355B;
+}
+
+img {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 1.7rem;
+}
+
+.screen1 img:hover {    
+  animation: tremble 50ms infinite;
+}
+
+/*screen2*/
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+
+    margin-bottom: 1.7rem;
+}
+
+.stringLuckText {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    animation: rising 1s;
+}
+
+.screen2 button {
+    background-color: #FF9500;
+    color: white;
+    border-radius: .4rem;
+    border: none;
+
+    padding: 1.6rem;
+}
+
+@keyframes tremble {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+  }
+  
+@keyframes rising {
+    0% {
+        transform: translateY(120px) scale(5%);
+    }
+    25% {
+        transform: translateY(100px) scale(15%);
+    }
+    50% {
+        transform: translateY(70px) scale(35%);
+    }
+    75% {
+        transform: translateY(30px) scale(55%);
+    }
+    100% {
+        transform: translateY(0) scale(100%);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
