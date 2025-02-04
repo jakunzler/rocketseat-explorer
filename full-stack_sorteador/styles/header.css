@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* 1) Reset e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121214;
+  color: #e1e1e6;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2) Container principal */
+.container {
+  width: 90%;         /* Ocupar quase toda a tela em smartphones */
+  max-width: 400px;   /* Impede que fique muito grande em telas maiores */
+  padding: 20px;
+  background: #202024;
+  border-radius: 8px;
+}
+
+/* Título centralizado */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.25rem; /* Legível em telas pequenas */
+}
+
+/* 3) Seções de inputs e botão */
+.input-group {
+  display: flex;
+  flex-direction: column; /* Empilhados em telas pequenas */
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #8257e6;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #9466ff;
+}
+
+/* 4) Resultado */
+.resultado {
+  margin-top: 20px;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.numero {
+  background: #29292e;
+  padding: 10px 15px;
+  border-radius: 4px;
+  animation: aparecer 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 5) Media Queries para telas maiores */
+
+/* Tablet em diante (por exemplo, 768px) */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: 600px;  /* Aumenta um pouco em telas médias */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Podemos mostrar inputs lado a lado, por exemplo: */
+  .input-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-group label {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .input-group input {
+    max-width: 100px;
+  }
+}
+
+/* Desktop em diante (1024px, por exemplo) */
+@media (min-width: 1024px) {
+  .container {
+    width: 70%;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+}
